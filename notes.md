@@ -29,6 +29,7 @@ Visual Studio Test Explorer
 
 * Ctrl+E, T
 * Test > Test Explorer
+* You can Right-click > Debug a specific test from the Test Explorer
 
 > _Make your methods private by default. Only make them public if you have to._
 

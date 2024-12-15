@@ -20,5 +20,15 @@ namespace Prestige.BizTests
 
 
         }
+
+        [TestMethod]
+        public void TestParamConstructor ()
+        {
+            string name = "Edwin";
+
+            Actor actor = new Actor(name);
+
+            Assert.AreEqual(name, actor.ActorName);
+        }
     }
 }
