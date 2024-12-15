@@ -45,5 +45,30 @@ public string SomeMethod ()
 {...}
 ```
 
+**Naming Conventions**
+
+* Fields should be camelCase
+* Properties should be PascalCase
+* Methods should be PascalCase
+* Method parameters should be camelCase 
+* Class names should be PascalCase 
+* Don't use prefixes in variable names 
+
+**Structure**
+
+* Use backing fields for properties 
+* One class per file 
+* Keep classes small 
+
+You can chain constructors together in a class and have constructors call each other (similar to how you can have a derived class call its base class constructor):
+
+```C#
+public MyClass () 
+{...}
+
+public MyClass (string myParam) : this() 
+{...}
+```
+
 ---
 End of document
