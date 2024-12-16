@@ -81,5 +81,13 @@ Tip: in Visual Studio, Right-click -> "Remove and sort usings" will clean up the
 * Don't use "System" 
 * Don't use the same name as your class names 
 
+A _Reference_ in Visual Studio allows one project to find another project. 
+
+**Static Classes**
+
+* Use them sparingly 
+* Best for support/helper classes. Ex: common utilies
+* Don't use them as a junk drawer 
+
 ---
 End of document
