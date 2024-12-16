@@ -143,5 +143,10 @@ public string SomeMethod (string someParam)
 {...}
 ```
 
+**Constant and Readonly Fields**
+
+* Should be in PascalCase
+* Don't use all-caps
+
 ---
 End of document
