@@ -112,5 +112,13 @@ namespace Prestige.BizTests
             // Assert
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void TestGetAgency ()
+        {
+            Actor actor = new Actor();
+            Assert.AreEqual("Prestige Talent", actor.GetAgency());
+        }
+
     }
 }

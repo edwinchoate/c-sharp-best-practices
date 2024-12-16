@@ -47,6 +47,12 @@ namespace Prestige.Biz
             return jobTitle;
         }
 
+        public string GetAgency ()
+        {
+            Agency agency = new Agency();
+            return agency.Name;
+        }
+
         /// <summary>
         /// Books actor and not date specified.
         /// </summary>
