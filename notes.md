@@ -148,5 +148,21 @@ public string SomeMethod (string someParam)
 * Should be in PascalCase
 * Don't use all-caps
 
+**Properties**
+
+Example of lazy loading: 
+
+```C#
+public object SomeProperty
+{
+    get 
+    {
+        if (_someField is null) _someField = new();
+        return _someField; 
+    }
+    set {...}
+}
+```
+
 ---
 End of document
