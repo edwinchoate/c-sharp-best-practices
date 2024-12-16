@@ -150,6 +150,8 @@ public string SomeMethod (string someParam)
 
 **Properties**
 
+* Don't put complex logic in getters and setters
+
 Example of lazy loading: 
 
 ```C#

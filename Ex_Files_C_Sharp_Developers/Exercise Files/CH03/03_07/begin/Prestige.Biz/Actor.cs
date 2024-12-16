@@ -19,7 +19,7 @@ namespace Prestige.Biz
         public string ActorName
         {
             get { return actorName; }
-            set { actorName = value; }
+            set { actorName = value?.Trim(); }
         }
 
         private string jobTitle;
