@@ -128,5 +128,20 @@ Sequencing things inside a class:
 * Make sure the different overloads are fundamentally doing the same thing.
 * Avoid duplicate code across the overloads
 
+**Method Chaining**
+
+* Use it when there's opportunity to reduce duplicate code
+
+Example of method chaining with overloads: 
+
+```C#
+public string SomeMethod () {
+    return SomeMethod("");
+}
+
+public string SomeMethod (string someParam) 
+{...}
+```
+
 ---
 End of document
