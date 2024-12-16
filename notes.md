@@ -121,5 +121,12 @@ Sequencing things inside a class:
 2. Properties 
 3. Methods
 
+**Overloading**
+
+* If your overloaded method starts to have a lot of params, that's a good sign that you could make that an object and pass a whole object into the method as a param. 
+* It's good to explain your different overloads with comments 
+* Make sure the different overloads are fundamentally doing the same thing.
+* Avoid duplicate code across the overloads
+
 ---
 End of document
