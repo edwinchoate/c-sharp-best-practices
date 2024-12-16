@@ -151,6 +151,7 @@ public string SomeMethod (string someParam)
 **Properties**
 
 * Don't put complex logic in getters and setters
+* Initialize the property to a value when you have the opportunity
 
 Example of lazy loading: 
 

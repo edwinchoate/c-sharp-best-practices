@@ -75,5 +75,20 @@ namespace Prestige.BizTests
             // Assert
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void TestDefaultActorDescription ()
+        {
+            Actor actor = new Actor();
+            Assert.AreEqual("Regular actor", actor.ActorDescription);
+        }
+
+        [TestMethod]
+        public void TestActorAge ()
+        {
+            Actor actor = new Actor { ActorName = "Edwin", ActorAge = 99 };
+            Assert.AreEqual(99, actor.ActorAge);
+        }
+
     }
 }

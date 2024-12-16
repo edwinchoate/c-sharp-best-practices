@@ -33,7 +33,7 @@ namespace Prestige.Biz
             set { jobTitle = value; }
         }
 
-        public string ActorAge { get; set; }
+        public int ActorAge { get; set; }
 
         public string ActorDescription { get; set; } = 
             "Regular actor";
