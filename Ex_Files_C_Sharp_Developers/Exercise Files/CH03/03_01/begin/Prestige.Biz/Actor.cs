@@ -39,5 +39,17 @@ namespace Prestige.Biz
             jobTitle = "Actor";
             return jobTitle;
         }
+
+        public string BookActor ()
+        {
+            return "Actor " + ActorName + " is booked. Booking can change if actor starts trouble.";
+        }
+
+        public string BookActor (string date)
+        {
+            return "Actor " + ActorName + " is booked on " + date + "." + 
+                "Booking can change if actor starts trouble.";
+        }
+
     }
 }

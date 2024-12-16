@@ -113,5 +113,13 @@ public class Policy
 }
 ```
 
+## Ch. 3 Naming and Handling Methods, Fields, and Properties
+
+Sequencing things inside a class:
+
+1. Constructors 
+2. Properties 
+3. Methods
+
 ---
 End of document
