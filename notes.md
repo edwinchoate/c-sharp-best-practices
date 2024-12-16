@@ -54,6 +54,7 @@ public string SomeMethod ()
 * Method parameters should be camelCase 
 * Class names should be PascalCase 
 * Don't use prefixes in variable names 
+* Namespaces should be PascalCase
 
 **Structure**
 
@@ -70,6 +71,15 @@ public MyClass ()
 public MyClass (string myParam) : this() 
 {...}
 ```
+
+Tip: in Visual Studio, Right-click -> "Remove and sort usings" will clean up the unused using statements at the top of the file for you. 
+
+**Namespaces**
+
+* Use a consistent, pre-defined naming convention
+    * Ex: <Company>.<Technology>.<Feature>
+* Don't use "System" 
+* Don't use the same name as your class names 
 
 ---
 End of document
