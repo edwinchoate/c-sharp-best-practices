@@ -89,5 +89,29 @@ A _Reference_ in Visual Studio allows one project to find another project.
 * Best for support/helper classes. Ex: common utilies
 * Don't use them as a junk drawer 
 
+**Singletons**
+
+> You should use a Singleton over a static class if you know you want to take advantage of OO features. 
+
+Example of a singleton implementation: 
+
+```C#
+public class Policy
+{
+    private static Policy _instance; 
+
+    private Policy () { }
+
+    public static Policy Instance () 
+    {
+        get 
+        {
+            if (_instance is null) _instance = new Policy();
+            return _instance;
+        }
+    }
+}
+```
+
 ---
 End of document
