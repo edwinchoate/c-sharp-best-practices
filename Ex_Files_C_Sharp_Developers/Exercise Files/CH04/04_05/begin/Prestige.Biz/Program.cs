@@ -15,6 +15,14 @@ namespace Prestige.Biz
         {            
             Console.WriteLine(ConstantNumber);
             Console.WriteLine(ReadOnlyNumber);
+
+            Agency agency = null;
+
+            // Throw NullReferenceException
+            // Console.WriteLine(agency.Name);
+
+            // Fails silently
+            Console.WriteLine(agency?.Name);
         }
     }
 }
