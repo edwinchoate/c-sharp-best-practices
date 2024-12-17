@@ -4,14 +4,14 @@ namespace Prestige.Biz
 {
     public class Actor
     {
-        public Actor()
+        public Actor() : this(null)
+        { }
+
+        public Actor(string actorName)
         {
             Console.WriteLine("An actor is born!");
-        }
-
-        public Actor(string actorName) 
-        {
             ActorName = actorName;
+            CurrentAgency = new Agency();
         }
 
         private string actorName;
@@ -37,6 +37,14 @@ namespace Prestige.Biz
 
         public string ActorDescription { get; set; } = 
             "Regular actor";
+
+        private Agency currentAgency; 
+
+        public Agency CurrentAgency
+        {
+            get { return currentAgency; }
+            set { currentAgency = value; }
+        }
 
         /// <summary>
         /// Will return title
@@ -73,8 +81,7 @@ namespace Prestige.Biz
         }
 
         public string GetAgency() {
-            var currentAgency = new Agency();
-            return currentAgency.Name;
+            return CurrentAgency.Name;
         }
     }
 }
