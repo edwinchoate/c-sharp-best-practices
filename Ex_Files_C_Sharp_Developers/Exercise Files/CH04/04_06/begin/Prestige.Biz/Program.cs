@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Prestige.Biz
 {
@@ -17,6 +18,17 @@ namespace Prestige.Biz
             //Console.WriteLine(ReadOnlyNumber);
             Agency agency = null;
             Console.WriteLine(agency?.Name);
+
+            using (FileStream fs = new FileStream(@"C:\Users\Edwin\Desktop\.NET-topics.txt", FileMode.Open))
+            {
+                // Do something
+            }
+
+            using (FileStream fs2 = new FileStream(@"C:\Users\Edwin\Desktop\.NET-topics.txt", FileMode.Open))
+            {
+                // Do something
+            }
+
         }
     }
 }
