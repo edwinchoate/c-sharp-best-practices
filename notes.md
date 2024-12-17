@@ -167,7 +167,5 @@ public object SomeProperty
 }
 ```
 
-## Ch. 4 Managing Objects Effectively
-
 ---
 End of document
